@@ -4,7 +4,11 @@
   background-size: 100% 5px;
   background-repeat: no-repeat;
 }
-
+.hello_world {
+  background: #0098da;
+  color: white;
+  text-align: center;
+}
 .wrapper {
   position: absolute;
   top: 150px;
@@ -22,7 +26,7 @@
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.3);
 }
 
-.nyan-cat {
+.nyan_cat {
   position: absolute;
   left: 50%;
   top: 50%;
