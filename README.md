@@ -18,7 +18,8 @@ Handy Extras
 * [Code split example](app/App.jsx#12)
 
 ## How to run
-
+* `yarn global add parcel-bundler` yarn安装parcel
+* `npm install -g parcel-bundler` npm安装parcel
 * `npm run dev` - Run the development server with hot reload but no server-rendering
 * `npm run build` - Build for production, required before running
 * `npm start` - Start the production server

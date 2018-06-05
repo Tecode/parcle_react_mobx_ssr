@@ -7,9 +7,9 @@ import importedComponent from 'react-imported-component';
 import { Helmet } from 'react-helmet';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
-import HelloWorld from './HelloWorld';
+import HelloWorld from './containers/HelloWorld';
 
-const HelloWorld2 = importedComponent(() => import('./HelloWorld2'));
+const HelloWorld2 = importedComponent(() => import('./containers/HelloWorld2'));
 
 export default function App() {
   return (
