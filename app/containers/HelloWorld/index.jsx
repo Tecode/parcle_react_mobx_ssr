@@ -9,7 +9,6 @@ import PropTypes from 'prop-types';
 
 function HelloWorld({ homeStore, appStore }) {
   appStore.log();
-  console.log(styles, '----------styles')
   return (
     <div>
       <Helmet>
