@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import styles from './codeSplitAssets/NyanCat.css';
+import styles from './codeSplitAssets/NyanCat.scss';
 import Go from './codeSplitAssets/NyanCat';
 
 export default class Nyan extends Component {
