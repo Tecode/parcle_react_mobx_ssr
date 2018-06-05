@@ -6,6 +6,8 @@ import React from 'react';
 import importedComponent from 'react-imported-component';
 import { Helmet } from 'react-helmet';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import NavBar from './containers/NavBar';
+import 'antd/dist/antd.less';
 
 import HelloWorld from './containers/HelloWorld';
 
@@ -13,7 +15,7 @@ const HelloWorld2 = importedComponent(() => import('./containers/HelloWorld2'));
 
 export default function App() {
   return (
-    <div>
+    <NavBar>
       <Helmet defaultTitle="Hello World!">
         <meta charSet="utf-8" />
       </Helmet>
@@ -22,6 +24,6 @@ export default function App() {
         <Route exact path="/codeSplit" component={HelloWorld2} />
         <Redirect to="/" />
       </Switch>
-    </div>
+    </NavBar>
   );
 }
