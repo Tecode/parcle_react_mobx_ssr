@@ -12,6 +12,7 @@ import 'antd/dist/antd.less';
 import HelloWorld from './containers/HelloWorld';
 
 const HelloWorld2 = importedComponent(() => import('./containers/HelloWorld2'));
+const Article = importedComponent(() => import('./containers/Article'));
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       </Helmet>
       <Switch>
         <Route exact path="/" component={HelloWorld} />
+        <Route exact path="/article" component={Article} />
         <Route exact path="/codeSplit" component={HelloWorld2} />
         <Redirect to="/" />
       </Switch>

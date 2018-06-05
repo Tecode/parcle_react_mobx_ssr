@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
+import { Link } from 'react-router-dom';
 import Layout from 'antd/lib/layout'
 import Menu from 'antd/lib/menu'
 import Icon from 'antd/lib/icon'
@@ -31,12 +32,14 @@ export default class NavBar extends Component {
           <div className={styles.logo} >Logo</div>
           <Menu theme="light" mode="inline" defaultSelectedKeys={['1']} style={{height: '100%'}}>
             <Menu.Item key="1">
-              <Icon type="form" />
-              <span>新增文章</span>
+              <Link to="/article">
+                <Icon type="form" />
+                <span>新增文章</span>
+              </Link>
             </Menu.Item>
             <Menu.Item key="2">
               <Icon type="video-camera" />
-              <span>nav 2</span>
+              <span>首页</span>
             </Menu.Item>
             <Menu.Item key="3">
               <Icon type="upload" />
