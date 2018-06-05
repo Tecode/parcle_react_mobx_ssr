@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 import { Link } from 'react-router-dom';
-import Layout from 'antd/lib/layout'
-import Menu from 'antd/lib/menu'
-import Icon from 'antd/lib/icon'
+import Layout from 'antd/lib/layout';
+import Menu from 'antd/lib/menu';
+import Icon from 'antd/lib/icon';
+import Nav from '../../components/Nav';
 import 'antd/lib/layout/style';
 import styles from './index.scss';
 const { Header, Sider, Content } = Layout;
@@ -54,6 +55,7 @@ export default class NavBar extends Component {
               type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
               onClick={this.toggle}
             />
+            <Nav/>
           </Header>
           <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
             { this.props.children }
